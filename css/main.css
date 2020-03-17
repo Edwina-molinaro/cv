@@ -1,0 +1,149 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1DFEC;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 4px 4px 4px 2px #728799;
+}
+
+.box-one{
+    background-color: #fff;
+    width: 50%;
+    height: 80vh;
+}
+
+.nav-icon{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.github, a{
+    flex-grow: 1;
+    font-size: 4em;
+    color: #D1DFEC;
+    text-shadow: -2px 1px 1px #728799;
+}
+
+.download, a{
+    color: #FB446B;
+    flex-grow:2; 
+    font-size: 1.2em;
+    text-shadow: none;
+}
+
+.title{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    text-shadow: 2px -2px 1px #FB446B, 3px 1px 4px #111;
+}
+
+.card{
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    background-color: #FB446B;
+}
+
+h2{
+    color: #EEECE0;
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    border: 2px solid #d6d2c0;
+    padding: 0.5rem 1.5rem;
+}
+
+h2:hover{
+    cursor: pointer;
+    background-color: #d87365;
+}
+
+.box-two{
+    width: 50%;
+    height: 80vh;
+    background-image: url('../img/img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.hide{
+    visibility: hidden;
+    position: absolute;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5em;
+    color: #D1DFEC;
+    text-shadow: -2px 2px 1px #bc2946;
+
+}
+
+.info-icons{
+    font-size: 1.5em;
+    color: #D1DFEC;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1275px) {
+    .box-two{
+        display: none;
+    }
+    
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .box-one{
+        width: 100%
+    }
+    
+    .card{
+        left: 10%;
+        width: 80%;
+    }
+    
+    .info-icons{
+        font-size: 1em;
+    }
+    
+    nav ul li{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1275px){
+    
+}
